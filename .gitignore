@@ -1,17 +1,16 @@
-/vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
-
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
-
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
-storage/*.key
-.env
-Homestead.yaml
-Homestead.json
-/.vagrant
+/laravel/node_modules
+/hot
+/storage
+/uploads
+/laravel/storage/*.key
+/laravel/vendor
+/laravel.env
+/laravel.env.backup
+/laravel.phpunit.result.cache
+/laraveldocker-compose.override.yml
+/laravelHomestead.json
+/laravelHomestead.yaml
+/laravelnpm-debug.log
+/laravelyarn-error.log
+/.idea
+/.vscode
