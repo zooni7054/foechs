@@ -39,7 +39,7 @@
 
                     <div class="col-sm-4 col-md-6">
                         <div class="welcome-area">
-                            <p>Last updated: 19 Dec, 2021</p>
+                            <p>Last updated: {{ $settings['updated'] }}</p>
                         </div>
                     </div>
 

@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers\Admin;
 
+use Carbon\Carbon;
 use App\Models\Member;
+use App\Models\Setting;
+
 use Illuminate\Http\Request;
+
 use App\Http\Controllers\Controller;
-
 use Illuminate\Support\Facades\Auth;
-
 use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Session;
 
@@ -84,6 +86,8 @@ class MemberController extends Controller
             $request->request->add(['image' => $filename]);
         }
 
+        Setting::where('key', 'updated')->update(['value' => Carbon::now()->format('M, d Y')]);
+
         if (Member::create($request->except('file'))) {
             Session::flash('success', 'Member created successfully!');
             return redirect()->route('members.index');
@@ -143,6 +147,9 @@ class MemberController extends Controller
             // update request
             $request->request->add(['image' => $filename]);
         }
+
+        Setting::where('key', 'updated')->update(['value' => Carbon::now()->format('M, d Y')]);
+
 
         if ($member->update($request->except('file'))) {
             Session::flash('success', 'Member updated successfully!');

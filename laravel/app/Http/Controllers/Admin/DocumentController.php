@@ -3,10 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use Carbon\Carbon;
+use App\Models\Setting;
+
 use App\Models\Document;
 
 use Illuminate\Http\Request;
-
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Intervention\Image\Facades\Image;
@@ -73,6 +74,8 @@ class DocumentController extends Controller
         // update request
         $request->request->add(['path' => $filename]);
 
+        Setting::where('key', 'updated')->update(['value' => Carbon::now()->format('M, d Y')]);
+
         if (Document::create($request->except('file'))) {
             Session::flash('success', 'Document created successfully!');
             return redirect()->route('documents.index');
@@ -132,6 +135,8 @@ class DocumentController extends Controller
             // update request
             $request->request->add(['path' => $filename]);
         }
+
+        Setting::where('key', 'updated')->update(['value' => Carbon::now()->format('M, d Y')]);
 
         if ($document->update($request->except('file'))) {
             Session::flash('success', 'Document updated successfully!');

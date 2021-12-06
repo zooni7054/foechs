@@ -6,8 +6,9 @@ use Carbon\Carbon;
 use App\Models\Album;
 use App\Models\Event;
 
-use Illuminate\Http\Request;
+use App\Models\Setting;
 
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Intervention\Image\Facades\Image;
@@ -88,6 +89,8 @@ class EventController extends Controller
             $request->request->add(['image' => $filename]);
         }
 
+        Setting::where('key', 'updated')->update(['value' => Carbon::now()->format('M, d Y')]);
+
         if (Event::create($request->except('file'))) {
             Session::flash('success', 'Event created successfully!');
             return redirect()->route('events.index');
@@ -156,6 +159,8 @@ class EventController extends Controller
             // update request
             $request->request->add(['image' => $filename]);
         }
+
+        Setting::where('key', 'updated')->update(['value' => Carbon::now()->format('M, d Y')]);
 
         if ($event->update($request->except('file'))) {
             Session::flash('success', 'Event updated successfully!');

@@ -4,10 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use Carbon\Carbon;
 use App\Models\Post;
+use App\Models\Setting;
+
 use App\Models\PostImage;
 
 use Illuminate\Http\Request;
-
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
@@ -84,6 +85,8 @@ class PostController extends Controller
 
         $post = Post::create($request->except('file'));
 
+        Setting::where('key', 'updated')->update(['value' => Carbon::now()->format('M, d Y')]);
+
         if ($post) {
             Session::flash('success', 'Society Update created successfully!');
             return redirect()->route('posts.edit', $post->id);
@@ -144,6 +147,8 @@ class PostController extends Controller
             // update request
             $request->request->add(['image' => $filename]);
         }
+
+        Setting::where('key', 'updated')->update(['value' => Carbon::now()->format('M, d Y')]);
 
         if ($post->update($request->except('file'))) {
             Session::flash('success', 'Society Update updated successfully!');
