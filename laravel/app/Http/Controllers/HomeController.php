@@ -9,10 +9,11 @@ use App\Models\Album;
 use App\Models\Event;
 use App\Models\Member;
 
+use App\Models\Document;
 use App\Models\PostImage;
+
+
 use App\Models\AlbumImage;
-
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
@@ -70,6 +71,13 @@ class HomeController extends Controller
         if($page->slug == 'updates'){
             $posts = Post::orderBy('created_at', 'DESC')->paginate(15);
             return view($page->view_name)->with(compact('page', 'posts'));
+        }
+
+        // events
+        if($page->slug == 'forms-documents'){
+            $documents = Document::where('type', 'document')->orderBy('created_at', 'DESC')->get();
+            $forms = Document::where('type', 'form')->orderBy('created_at', 'DESC')->get();
+            return view($page->view_name)->with(compact('page', 'documents', 'forms'));
         }
 
         return view($page->view_name)->with(compact('page'));

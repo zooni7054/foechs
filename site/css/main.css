@@ -636,3 +636,36 @@ footer .item ul li {
     margin-bottom: 20px;
     position: relative;
 }
+
+
+/* forms-documents */
+.forms-documents {
+
+}
+.forms-documents .item{
+    padding: 15px 0px;
+    position: relative;
+    border-top: 1px solid #b9b9b9;
+    text-align: left;
+}
+.forms-documents .item .content-area{
+    position: relative;
+    padding-right: 135px;
+}
+.forms-documents .item .content-area h4{
+    font-size: 16px;
+    margin: 0px;
+}
+.forms-documents .item .icon-area{
+    position: absolute;
+    top: 6px;
+    right: 0px;
+    background-color: #006e33;
+    color: #fff;
+    padding: 0px 15px;
+    border-radius: 3px;
+}
+.forms-documents .item .icon-area span{
+    font-size: 15px;
+    margin-left: 5px;
+}
