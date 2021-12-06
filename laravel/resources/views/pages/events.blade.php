@@ -39,7 +39,7 @@
                     @endforeach
 
                 @else
-                    <h3 class="text-center">No Albums Found</h3>
+                    <h3 class="text-center">No Events Found</h3>
                 @endif
 
             </div>
