@@ -72,7 +72,7 @@ class EventController extends Controller
         ];
 
         if($request->has('file')){
-            $rules['file'] = 'required|image|mimes:jpeg,png,jpg|max:1200';
+            $rules['file'] = 'required|image|mimes:jpeg,png,jpg|max:12000';
         }
 
         $request->validate($rules);
