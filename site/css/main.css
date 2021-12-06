@@ -690,3 +690,7 @@ footer .item ul li {
     background-color: #eee;
     border-color: #ddd;
 }
+
+.possession-process, .transfer-process, .construction-house{
+    text-align: left !important;
+}
