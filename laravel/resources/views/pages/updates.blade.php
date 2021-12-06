@@ -18,25 +18,32 @@
 
     <div class="section updates-list">
         <div class="container">
-            @foreach ($posts as $post)
-                <div class="row item @if($loop->last) no-border @endif">
-                    <div class="col-md-2">
-                        <div class="calendar-area">
-                            <i class="fa fa-calendar"></i>
-                            <p>{{ $post->created_at->format('d-m-Y') }}</p>
+
+            @if (count($posts) > 0)
+                @foreach ($posts as $post)
+                    <div class="row item @if ($loop->last) no-border @endif">
+                        <div class="col-md-2">
+                            <div class="calendar-area">
+                                <i class="fa fa-calendar"></i>
+                                <p>{{ $post->created_at->format('d-m-Y') }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="content-area">
+                                <a href="{{ route('single-update', $post->id) }}">
+                                    <h3>{{ $post->title }}</h3>
+                                </a>
+                                <p>{{ $post->short_description }}</p>
+                                <a href="{{ route('single-update', $post->id) }}" class="btn btn-primary btn-more">read
+                                    more</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-10">
-                        <div class="content-area">
-                            <a href="{{ route('single-update', $post->id) }}">
-                                <h3>{{ $post->title }}</h3>
-                            </a>
-                            <p>{{ $post->short_description }}</p>
-                            <a href="{{ route('single-update', $post->id) }}" class="btn btn-primary btn-more">read more</a>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
+                @endforeach
+
+            @else
+                <h3 class="text-center">No Albums Found</h3>
+            @endif
         </div>
     </div>
 

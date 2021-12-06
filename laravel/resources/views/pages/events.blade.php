@@ -22,19 +22,25 @@
 
             <div class="row">
 
-                @foreach ($events as $event)
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <a href="{{ route('single-event', $event->id) }}">
-                            <div class="item">
-                                <img src="{{ asset('uploads/events/' . $event->image) }}" class="img-responsive"
-                                    alt="event">
-                                <p><i class="fa fa-calendar"></i> {{ $event->schedule_date->format('d-m-Y') }}</p>
-                                <h3>{{ $event->title }}</h3>
-                                <button type="button" class="btn btn-more">read more</button>
-                            </div>
-                        </a>
-                    </div>
-                @endforeach
+                @if (count($events))
+
+                    @foreach ($events as $event)
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <a href="{{ route('single-event', $event->id) }}">
+                                <div class="item">
+                                    <img src="{{ asset('uploads/events/' . $event->image) }}" class="img-responsive"
+                                        alt="event">
+                                    <p><i class="fa fa-calendar"></i> {{ $event->schedule_date->format('d-m-Y') }}</p>
+                                    <h3>{{ $event->title }}</h3>
+                                    <button type="button" class="btn btn-more">read more</button>
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
+
+                @else
+                    <h3 class="text-center">No Albums Found</h3>
+                @endif
 
             </div>
 
