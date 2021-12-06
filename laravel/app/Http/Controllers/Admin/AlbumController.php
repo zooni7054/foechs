@@ -171,7 +171,8 @@ class AlbumController extends Controller
 
     public function images($id){
         $album = Album::findOrFail($id);
-        return view('albums.images')->with(compact('album'));
+        $images = AlbumImage::where('album_id', $id)->paginate(20);
+        return view('albums.images')->with(compact('album', 'images'));
     }
 
     public function uploadImages(Request $request, $id){

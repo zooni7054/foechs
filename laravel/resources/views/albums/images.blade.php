@@ -25,14 +25,15 @@
 
         <div class="card-body">
 
-            @if(count($album->images) > 0)
+            @if (count($album->images) > 0)
 
                 <div class="row uploads">
 
-                    @foreach ($album->images as $item)
+                    @foreach ($images as $item)
                         <div class="col-md-3">
                             <div class="item">
-                                <img src="{{ asset('uploads/albums/'.$album->id.'/'.$item->path) }}" class="img-thumbnail" alt="{{ $item->id }}">
+                                <img src="{{ asset('uploads/albums/' . $album->id . '/' . $item->path) }}"
+                                    class="img-thumbnail" alt="{{ $item->id }}">
                                 <a href="{{ route('albums.image-delete', $item->id) }}"><i class="fas fa-trash"></i></a>
                             </div>
                         </div>
@@ -43,8 +44,16 @@
             @else
                 <h4 class="text-center">No images found!</h4>
             @endif
-            
+
         </div>
+
+        @if ($images->total() > 20)
+            <!-- /.card-body -->
+            <div class="card-footer clearfix">
+                {{ $images->links() }}
+            </div>
+            <!-- /.card-footer-->
+        @endif
 
 
     </div>
@@ -61,7 +70,7 @@
                     </button>
                 </div>
 
-                
+
                 <div class="modal-body">
 
                     <p>Refresh the page after completing uploads</p>
@@ -72,7 +81,7 @@
                     </form>
 
                 </div>
-                
+
             </div>
             <!-- /.modal-content -->
         </div>
