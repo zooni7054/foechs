@@ -110,6 +110,10 @@
   footer .item h4{
     margin-top: 30px;
   }
+
+  .title-area .content h1 {
+      font-size: 30px;
+  }
 }
 
 /* Extra Small Devices, Phones */
