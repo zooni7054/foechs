@@ -694,3 +694,26 @@ footer .item ul li {
 .possession-process, .transfer-process, .construction-house{
     text-align: left !important;
 }
+
+
+.nocs{
+
+}
+.nocs .item{
+    background-color:#006e33;
+    background-position: 50% 50%;
+    background-size: cover;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    height: 310px;
+    display: table;
+}
+.nocs .item .content-area{
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+}
+.nocs .item .content-area h4{
+    font-size: 24px;
+}
