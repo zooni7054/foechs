@@ -82,7 +82,7 @@
                             <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="{{ route('rules-regulations') }}">Rules & Regulations</a></li>
-                            <li><a href="{{ route('noc') }}">NOC</a></li>
+                            <li><a href="{{ route('noc') }}">NOCs</a></li>
                             <li><a href="{{ route('master-plan') }}">Master Plan</a></li>
                             <li><a href="{{ route('management-committee') }}">Management Committee</a></li>
                         </ul>

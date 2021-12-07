@@ -9,7 +9,7 @@
     <div class="title-area">
         <div class="container">
             <div class="content">
-                <h1>Society NOC</h1>
+                <h1>Society NOCs</h1>
             </div>
         </div>
     </div>
