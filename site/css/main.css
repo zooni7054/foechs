@@ -220,12 +220,12 @@ a:focus {
 
 /* banner-area */
 .banner-area {
-    background-image: url("../img/banner.jpg");
+    /* background-image: url("../img/banner.jpg");
     background-position: 50% 50%;
-    background-size: cover;
+    background-size: cover; */
 }
 .banner-area .content {
-    padding: 220px 0px;
+    /* padding: 220px 0px; */
 }
 .banner-area .content h1 {
     margin: 0px;

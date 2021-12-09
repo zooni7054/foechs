@@ -7,9 +7,9 @@
 @section('content')
 
 <div class="banner-area">
-    <div class="container">
-        <div class="content">
-            <h1>FOECSH <br><span>Islamabad Pakistan</span></h1>
+    <div class="container-full">
+        <div class="image-area">
+            <img src="{{ asset('site/img/banner.jpg') }}" class="img-responsive" alt="banner">
         </div>
     </div>
 </div>
