@@ -31,6 +31,10 @@
                 <li>Accept terms & conditions of the society. </li>
             </ol>
 
+            <div class="button-area" style="margin: 30px 0px;">
+                <a href="https://foechs.com/uploads/documents/61c429705476c.pdf" target="_blank" download="Application for Possession.pdf" class="btn btn-download">Download Application</a>
+            </div>
+
             <h2>Standard Operating Procedure For Handing/taking Over Possession Of Plot</h2>
 
             <p>Members are required to complete the following actions:</p>
