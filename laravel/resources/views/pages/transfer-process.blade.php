@@ -38,7 +38,7 @@
             </ol>
 
             <div class="button-area" style="margin: 30px 0px;">
-                <a href="https://foechs.com/uploads/documents/61c42a098b7dc.pdf" target="_blank" download="Application for Possession.pdf" class="btn btn-download">Download Application</a>
+                <a href="https://foechs.com/uploads/documents/61c42a098b7dc.pdf" target="_blank" download="Application for Transfer of Plot.pdf" class="btn btn-download">Download Application</a>
             </div>
 
             <hr />
@@ -55,7 +55,7 @@
             </ol>
 
             <div class="button-area" style="margin: 30px 0px;">
-                <a href="https://foechs.com/uploads/documents/61c42a098b7dc.pdf" target="_blank" download="Application for Possession.pdf" class="btn btn-download">Download Application</a>
+                <a href="https://foechs.com/uploads/documents/61c42a098b7dc.pdf" target="_blank" download="Application for Transfer of Plot.pdf" class="btn btn-download">Download Application</a>
             </div>
 
         </div>
