@@ -102,6 +102,15 @@ class HomeController extends Controller
         return view('pages.single-post')->with(compact('post', 'images'));
     }
 
+    public function contactUs(Request $request){
+        $rules = [
+            'name' => 'required',
+            'email' => 'required'
+        ];
+
+        $request->validate($rules);
+    }
+
     public function test()
     {
         $users = User::where('id', 1)->get();

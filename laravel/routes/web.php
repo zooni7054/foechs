@@ -149,6 +149,8 @@ foreach($pages as $page){
     Route::get($page->slug, [HomeController::class, 'page'])->name($page->slug);
 }
 
+Route::post('/contact-us', [HomeController::class, 'contactUs'])->name('contact-us.submit');
+
 Route::get('/gallery/{id}', [HomeController::class, 'singleAlbum'])->name('single-album');
 Route::get('/event/{id}', [HomeController::class, 'singleEvent'])->name('single-event');
 Route::get('/update/{id}', [HomeController::class, 'singleUpdate'])->name('single-update');

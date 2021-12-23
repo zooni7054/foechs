@@ -40,7 +40,8 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                    <form action="#" method="post">
+                    <form action="{{ route('contact-us.submit') }}" method="post">
+                        @csrf
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Your Name">
                         </div>

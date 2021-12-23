@@ -236,6 +236,9 @@ a:focus {
 .banner-area .content h1 span {
     font-size: 40px;
 }
+.banner-area .image-area img{
+    width: 100%;
+}
 
 /* news-ticker */
 .news-tickers {
