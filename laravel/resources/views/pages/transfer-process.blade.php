@@ -37,6 +37,10 @@
                 <li>CPR of tax from purchaser and seller (if applicable of seller)</li>
             </ol>
 
+            <div class="button-area" style="margin: 30px 0px;">
+                <a href="https://foechs.com/uploads/documents/61c42a098b7dc.pdf" target="_blank" download="Application for Possession.pdf" class="btn btn-download">Download Application</a>
+            </div>
+
             <hr />
 
             <h3>In case of Death</h3>
@@ -49,6 +53,10 @@
                 <li>Affidavit on stamp paper from all legal heirs in case the plot is intended to be sold or transferred to any person other than legal heirs.</li>
                 <li>Family Registration Certificate from NADRA</li>
             </ol>
+
+            <div class="button-area" style="margin: 30px 0px;">
+                <a href="https://foechs.com/uploads/documents/61c42a098b7dc.pdf" target="_blank" download="Application for Possession.pdf" class="btn btn-download">Download Application</a>
+            </div>
 
         </div>
     </div>
