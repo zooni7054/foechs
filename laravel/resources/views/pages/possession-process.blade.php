@@ -18,17 +18,17 @@
 
     <div class="section possession-process">
         <div class="container">
-            <h2>Requirement for Application for Possession/Demarcation of Plot</h2>
+            <h2>Requirements for Application for Possession of Plot</h2>
 
             <p>Following actions are required to be completed:</p>
 
             <ol>
-                <li>Provide 3 x possession forms duly filled</li>
+                <li>Provide 3 Copies of possession forms duly filled</li>
                 <li>Provide photocopies of CNIC and Allotment Letter</li>
-                <li>Provide 3 passport size photographs </li>
+                <li>Provide 3 passport size photographs</li>
                 <li>Deposit possession fee as applicable</li>
-                <li>Deposit/claim adjustment of dues as per actual measurement on ground.</li>
-                <li>Accept terms & conditions of the society. </li>
+                <li>Deposit dues as per actual measurement on ground</li>
+                <li>Accept terms & conditions of the society</li>
             </ol>
 
             <div class="button-area" style="margin: 30px 0px;">
