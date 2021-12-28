@@ -25,7 +25,7 @@
                         <h3>Documents</h3>
                         @foreach ($documents as $document)
 
-                            <a href="{{ asset('uploads/documents/' . $document->path) }}" target="_blank" download="{{ $document->title }}.pdf">
+                            <a href="{{ asset('uploads/documents/' . $document->path) }}" target="_blank">
                                 <div class="item">
                                     <div class="content-area">
                                         <h4>{{ $document->title }}</h4>
@@ -44,7 +44,7 @@
                         <h3>Forms</h3>
                         @foreach ($forms as $form)
 
-                            <a href="{{ asset('uploads/documents/' . $form->path) }}" target="_blank" download="{{ $form->title }}.pdf">
+                            <a href="{{ asset('uploads/documents/' . $form->path) }}" target="_blank">
                                 <div class="item">
                                     <div class="content-area">
                                         <h4>{{ $form->title }}</h4>
