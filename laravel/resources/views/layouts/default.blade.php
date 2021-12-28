@@ -164,6 +164,7 @@
                             <li>Address: {{ $settings['address'] }}</li>
                             <li>Email: <a href="mailto:{{ $settings['email'] }}">{{ $settings['email'] }}</a></li>
                             <li>Phone: <a href="tel:{{ $settings['phone'] }}">{{ $settings['phone'] }}</a></li>
+                            <li>WhatsApp: <a href="tel:{{ $settings['whatsapp'] }}">{{ $settings['whatsapp'] }}</a></li>
                         </ul>
                     </div>
                 </div>

@@ -35,6 +35,7 @@
                     <div class="contact-info">
                         <h3>Contact information</h3>
                         <p><strong>Phone: </strong><br><a href="tel:{{ $settings['phone'] }}">{{ $settings['phone'] }}</a></p>
+                        <p><strong>WhatsApp: </strong><br><a href="tel:{{ $settings['whatsapp'] }}">{{ $settings['whatsapp'] }}</a></p>
                         <p><strong>Email: </strong><br><a href="mailto:{{ $settings['email'] }}">{{ $settings['email'] }}</a></p>
                         <p><strong>Address: </strong><br>{{ $settings['address'] }}</p>
                     </div>
