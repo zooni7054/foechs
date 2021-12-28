@@ -154,3 +154,6 @@ Route::post('/contact-us', [HomeController::class, 'contactUs'])->name('contact-
 Route::get('/gallery/{id}', [HomeController::class, 'singleAlbum'])->name('single-album');
 Route::get('/event/{id}', [HomeController::class, 'singleEvent'])->name('single-event');
 Route::get('/update/{id}', [HomeController::class, 'singleUpdate'])->name('single-update');
+
+
+Route::get('sitemap', [HomeController::class, 'sitemap'])->name('sitemap');

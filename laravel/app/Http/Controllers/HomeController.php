@@ -2,22 +2,25 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use App\Models\Page;
 use App\Models\Post;
 use App\Models\User;
 use App\Models\Album;
 use App\Models\Event;
+
 use App\Models\Member;
-
 use App\Models\Document;
+
+
 use App\Models\PostImage;
-
-
 use App\Models\AlbumImage;
-use Carbon\Carbon;
+use Spatie\Sitemap\Sitemap;
 use Illuminate\Http\Request;
+use Spatie\Sitemap\Tags\Url;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use Spatie\Sitemap\SitemapGenerator;
 use Illuminate\Support\Facades\Route;
 
 class HomeController extends Controller
@@ -119,6 +122,33 @@ class HomeController extends Controller
 
         $notifications = Auth::user()->unreadNotifications;
         dd($notifications);
+    }
+
+
+    public function sitemap(){
+        $path = public_path('sitemap.xml');
+
+        $sitemap = Sitemap::create();
+
+        Page::all()->each(function (Page $item) use ($sitemap) {
+            $sitemap->add(Url::create("{$item->slug}"));
+        });
+
+        Event::all()->each(function (Event $item) use ($sitemap) {
+            $sitemap->add(Url::create("event/{$item->id}"));
+        });
+
+        Album::all()->each(function (Album $item) use ($sitemap) {
+            $sitemap->add(Url::create("gallery/{$item->id}"));
+        });
+
+        Post::all()->each(function (Post $item) use ($sitemap) {
+            $sitemap->add(Url::create("update/{$item->id}"));
+        });
+
+        $sitemap->writeToFile(public_path('sitemap.xml'));
+        
+        echo "Generated";
     }
     
 }
