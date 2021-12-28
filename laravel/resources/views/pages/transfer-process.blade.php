@@ -28,7 +28,7 @@
                 <li>NDC (No Dues Certificate) Charges for NDC Rs. 5,000</li>
                 <li>Application for transfer of plot from transferor</li>
                 <li>Submission of transfer form (available in FOECHS office) duly signed with thumb impressions by transferor & transferee</li>
-                <li>Affidavit on stamp paper as per specimen from transferor & transferee attested by Notary Public</li>
+                <li>Affidavit (value 100) on stamp paper as per specimen from transferor & transferee attested by Notary Public</li>
                 <li>2 CNIC copies of Seller, Purchaser & witnesses (Separate two witnesses are required from transferor & transferee).</li>
                 <li>Original allotment letter issued to transferor</li>
                 <li>Pay Order/Demand Draft in favor of FOECHS on account of Membership fee, Transfer fee and Share capital. (Rs. 65,000 for 600 sq.yds, Rs.33,000 for 300 sq.yds and Rs.17, 000 for 150 sq.yds</li>
@@ -49,8 +49,8 @@
             <ol>
                 <li>Attested copy of Death Certificate</li>
                 <li>Decree from Court, declaring particulars of legal heirs i.e. succession certificate</li>
-                <li>Affidavit on stamp paper from other legal heirs in case the plot is intended to be transferred in the name of any legal heir included in the list.</li>
-                <li>Affidavit on stamp paper from all legal heirs in case the plot is intended to be sold or transferred to any person other than legal heirs.</li>
+                <li>Affidavit (value 100) on stamp paper from other legal heirs in case the plot is intended to be transferred in the name of any legal heir included in the list.</li>
+                <li>Affidavit (value 100) on stamp paper from all legal heirs in case the plot is intended to be sold or transferred to any person other than legal heirs.</li>
                 <li>Family Registration Certificate from NADRA</li>
             </ol>
 
