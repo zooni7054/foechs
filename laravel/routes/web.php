@@ -131,7 +131,6 @@ Route::prefix('admin')->middleware('auth')->group(function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
 
     Route::get('logout', [LoginController::class, 'logout'])->name('logout');
-    Route::get('/test', [HomeController::class, 'test'])->name('test');
 
     Route::get('/', [HomeController::class, 'index'])->name('home');
 });
@@ -154,6 +153,8 @@ Route::post('/contact-us', [HomeController::class, 'contactUs'])->name('contact-
 Route::get('/gallery/{id}', [HomeController::class, 'singleAlbum'])->name('single-album');
 Route::get('/event/{id}', [HomeController::class, 'singleEvent'])->name('single-event');
 Route::get('/update/{id}', [HomeController::class, 'singleUpdate'])->name('single-update');
+
+Route::get('/test', [HomeController::class, 'test'])->name('test');
 
 
 Route::get('sitemap', [HomeController::class, 'sitemap'])->name('sitemap');
