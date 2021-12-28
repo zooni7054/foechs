@@ -19,6 +19,7 @@
     <div class="section under-construction">
         <div class="container">
             <img src="{{ asset('site/img/master-plan.jpg') }}" class="img-responsive" alt="Master Plan">
+            <a href="{{ asset('site/img/master-plan.jpg') }}" target="_blank" class="btn btn-download" style="margin-top: 30px;" download="">Download Master Plan</a>
         </div>
     </div>
 
