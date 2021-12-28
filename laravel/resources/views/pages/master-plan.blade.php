@@ -18,7 +18,7 @@
 
     <div class="section under-construction">
         <div class="container">
-            <h2>Under Construction</h2>
+            <img src="{{ asset('site/img/master-plan.jps') }}" class="img-responsive" alt="Master Plan">
         </div>
     </div>
 
