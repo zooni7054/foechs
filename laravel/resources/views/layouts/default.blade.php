@@ -24,6 +24,29 @@
 
     <script src="{{ asset('site/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
 
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Foreign Office Employees Cooperative Housing Society",
+          "alternateName": "FOECHS",
+          "url": "https://www.foechs.com",
+          "logo": "https://www.foechs.com/site/img/logo-updated.svg",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "03345640000",
+            "contactType": "customer service",
+            "areaServed": "PK",
+            "availableLanguage": ["en","Urdu"]
+          },
+          "sameAs": [
+            "https://www.youtube.com/channel/UCm6wM7OJeJvTu0uhEJmrOcg",
+            "https://twitter.com/foechsOfficial",
+            "https://www.facebook.com/foechsOfficial/"
+          ]
+        }
+    </script>
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
