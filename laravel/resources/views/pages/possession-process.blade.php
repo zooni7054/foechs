@@ -20,34 +20,34 @@
         <div class="container">
             <h2>Requirements for Application for Possession of Plot</h2>
 
-            <p>Following actions are required to be completed:</p>
+            <p>Following actions are required to be completed</p>
 
             <ol>
-                <li>Provide 3 Copies of possession forms duly filled</li>
+                <li>Provide 3 x possession forms duly filled</li>
                 <li>Provide photocopies of CNIC and Allotment Letter</li>
                 <li>Provide 3 passport size photographs</li>
                 <li>Deposit possession fee as applicable</li>
-                <li>Deposit dues as per actual measurement on ground</li>
-                <li>Accept terms & conditions of the society</li>
+                <li>Deposit/claim adjustment of dues as per actual measurement on ground.</li>
+                <li>Accept terms & conditions of the society.</li>
             </ol>
 
             <div class="button-area" style="margin: 30px 0px;">
                 <a href="https://foechs.com/uploads/documents/61c429705476c.pdf" target="_blank" class="btn btn-download">Download Application</a>
             </div>
 
-            <h2>Standard Operating Procedure For Handing/taking Over Possession Of Plot</h2>
+            <h2>PROCEDURE FOR HANDING/TAKING OVER POSSESSION OF PLOT</h2>
 
-            <p>Members are required to complete the following actions:</p>
+            <p>Members are required to complete the following actions</p>
 
             <ul>
-                <li>Clear all outstanding dues.</li>
+                <li>Clear all outstanding dues</li>
                 <li>Submit application for taking possession on prescribed form</li>
                 <li>On approval of request, visit site of Society along with Surveyor deputed by the Society for physical measurement of the plot area.</li>
                 <li>The final accounts for clearance before handing over possession of plot will be prepared by accounts department of the Society based on actual measurements and taking care of shortfalls/additional lands and corner/non corner plots etc. if any.</li>
-                <li>Clear the final accounts.</li>
+                <li>Clear the final accounts</li>
             </ul>
 
-            <p>The Society is required to complete the following actions: </p>
+            <p>The Society is required to complete the following actions</p>
 
             <ul>
                 <li>Accept application for handing/taking over possession of plot on clearance of dues.</li>

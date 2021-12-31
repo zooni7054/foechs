@@ -21,11 +21,11 @@
             <h2>Standard Operating Procedure For Construction Of Houses</h2>
 
             <ol>
-                <li>NOC of Construction is mandatory, Construction of any type without NOC will not be accepted. NOC for construction, electric meter connection and inspection check list for different stages of construction will be issued along with possession of plot.</li>
-                <li>On construction of house, member will have to submit drawings for approval of society’s engineer and onward submission to RDA. Payment of fee will be charged on account of RDA Charges & services charges. </li>
+                <li>NOC of Construction is mandatory, Construction of any type without 	NOC will not be accepted.  </li>
+                <li>NOC for construction, and inspection check list for different stages of construction will be issued after the submission of drawings in society’s office and engineer’s approval. . R.s 1/per Sq.-Ft covered area will be charged on the account of scrutiny and top Supervision</li>
                 <li>During construction, violation of approved drawings will not be allowed.</li>
                 <li>It is owner’s responsibility to contact society’s office at every inception stage and get approval of work done.</li>
-                <li>Check list should be signed by site engineer of FOECHS at every stage. In case of work done on next stage without prior approval, a fine of PKR 50,000/- will be charged.</li>
+                <li>Check list should be signed by the site engineer of FOECHS at every stage. In case of work done on next stage without prior approval, fine of PKR 50,000/- will be charged.</li>
                 <li>Approved drawings are valid for 1 Year only, after completion of validity time member will have to submit application for extension.</li>
             </ol>
         </div>
