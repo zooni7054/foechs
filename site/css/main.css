@@ -240,6 +240,12 @@ a:focus {
     width: 100%;
 }
 
+
+/* slider-area  */
+.slider-area img{
+    width: 100%;
+}
+
 /* news-ticker */
 .news-tickers {
     margin-top: 30px;

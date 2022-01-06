@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="{{ asset('site/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('site/font-awesome/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('site/css/magnific-popup.css') }}">
+
+    <!-- Additional per-page css -->
+    @yield('cssfiles')
+
     <link rel="stylesheet" href="{{ asset('site/css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('site/css/responsive.css') }}">
 
@@ -216,7 +220,13 @@
     <script src="{{ asset('site/js/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
     <script src="{{ asset('site/js/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ asset('site/js/popup.js') }}"></script>
+
+    <!-- Additional per-page css -->
+    @yield('jsfiles')
+
     <script src="{{ asset('site/js/main.js') }}"></script>
+
+    @yield('customjs')
 </body>
 
 </html>
