@@ -246,6 +246,13 @@ a:focus {
     width: 100%;
 }
 
+.slider-area img.desktop{
+    display: block;
+}
+.slider-area img.mobile{
+    display: none;
+}
+
 /* news-ticker */
 .news-tickers {
     margin-top: 30px;

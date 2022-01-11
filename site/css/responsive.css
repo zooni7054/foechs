@@ -137,6 +137,13 @@
   .home-committee .item p {
     font-size: 16px;
   }
+
+  .slider-area img.desktop{
+      display: none;
+  }
+  .slider-area img.mobile{
+      display: block;
+  }
 }
 @media only screen and (max-width: 500px) {
 }

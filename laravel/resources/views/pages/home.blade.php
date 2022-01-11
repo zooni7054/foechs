@@ -17,16 +17,20 @@
             </ol>
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="{{ asset('site/img/slider/slide-1.jpg') }}" class="img-responsive" alt="Slide 1">
+                    <img src="{{ asset('site/img/slider/slide-1.jpg') }}" class="img-responsive desktop" alt="Slide 1">
+                    <img src="{{ asset('site/img/slider/slide-1-mobile.jpg') }}" class="img-responsive mobile" alt="Slide 1">
                 </div>
                 <div class="item">
-                    <img src="{{ asset('site/img/slider/slide-2.jpg') }}" class="img-responsive" alt="Slide 2">
+                    <img src="{{ asset('site/img/slider/slide-2.jpg') }}" class="img-responsive desktop" alt="Slide 2">
+                    <img src="{{ asset('site/img/slider/slide-2-mobile.jpg') }}" class="img-responsive mobile" alt="Slide 2">
                 </div>
                 <div class="item">
-                    <img src="{{ asset('site/img/slider/slide-3.jpg') }}" class="img-responsive" alt="Slide 3">
+                    <img src="{{ asset('site/img/slider/slide-3.jpg') }}" class="img-responsive desktop" alt="Slide 3">
+                    <img src="{{ asset('site/img/slider/slide-3-mobile.jpg') }}" class="img-responsive mobile" alt="Slide 3">
                 </div>
                 <div class="item">
-                    <img src="{{ asset('site/img/slider/slide-4.jpg') }}" class="img-responsive" alt="Slide 4">
+                    <img src="{{ asset('site/img/slider/slide-4.jpg') }}" class="img-responsive desktop" alt="Slide 4">
+                    <img src="{{ asset('site/img/slider/slide-4-mobile.jpg') }}" class="img-responsive mobile" alt="Slide 4">
                 </div>
             </div>
             <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
