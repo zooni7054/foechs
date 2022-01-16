@@ -47,7 +47,7 @@ class HomeController extends Controller
             $members = Member::orderBy('sort', 'ASC')->get();
             $events = Event::orderBy('schedule_date', 'DESC')->limit(3)->get();
             $tenders = Tender::orderBy('created_at', 'DESC')->limit(3)->get();
-            $tickers = Ticker::orderBy('order', 'DESC')->limit(10)->get();
+            $tickers = Ticker::orderBy('created_at', 'DESC')->limit(10)->get();
             return view($page->view_name)->with(compact('page', 'members', 'events', 'tenders', 'tickers'));
         }
 
