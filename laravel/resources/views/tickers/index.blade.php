@@ -1,7 +1,7 @@
 
 @extends('layouts.user')
 
-@section('title', 'Tenders & procurements')
+@section('title', 'Tickers')
 
 
 @section('content')
@@ -20,19 +20,14 @@
 
     </div>
 
-    <form action="{{ route('tenders.index') }}" method="get" autocomplete="off">
+    <form action="{{ route('tickers.index') }}" method="get" autocomplete="off">
         <input type="hidden" name="search" value="1">
         @php
             $title = '';
-            $type = '';
 
             if(isset($_GET['search'])){
                 if(!empty($_GET['title'])){
                     $title = $_GET['title'];
-                }
-
-                if(!empty($_GET['type'])){
-                    $type = $_GET['type'];
                 }
             }
 
@@ -47,16 +42,11 @@
                         <input type="text" name="title" value="{{ $title }}" class="form-control">
                     </div>
 
-                    <div class="form-group col-md-4">
-                        <label for="">Enter Type</label>
-                        <input type="text" name="type" value="{{ $type }}" class="form-control">
-                    </div>
-
                 </div>
             </div>
             <div class="card-footer">
                 <button type="submit" class="btn btn-success">Search</button>
-                <a href="{{ route('tenders.index') }}" class="ml-5">Clear Search</a>
+                <a href="{{ route('tickers.index') }}" class="ml-5">Clear Search</a>
             </div>
         </div>
     </form>
@@ -66,11 +56,11 @@
 <!-- Default box -->
 <div class="card card-success card-outline">
     <div class="card-header">
-        <h3 class="card-title">Tenders & Procurements</h3>
+        <h3 class="card-title">Tickers</h3>
 
         <div class="card-tools">
-            <a href="{{ route('tenders.create') }}" class="btn btn-success btn-sm">
-                <i class="fas fa-plus"></i> Add Tender & Procurement
+            <a href="{{ route('tickers.create') }}" class="btn btn-success btn-sm">
+                <i class="fas fa-plus"></i> Add Tickers
             </a>
         </div>
     </div>
@@ -80,28 +70,26 @@
         <table class="table table-bordered">
             <thead>
               <tr>
-                <th>Image</th>
-                <th>Type</th>
-                <th>Title</th>
+                <th>ID</th>
+                <th>Content</th>
+                <th>Path</th>
                 <th>Created At</th>
                 <th class="action">Action</th>
               </tr>
             </thead>
             <tbody>
 
-                @if(count($tenders) > 0)
+                @if(count($tickers) > 0)
 
-                    @foreach ($tenders as $tender)
+                    @foreach ($tickers as $ticker)
                         <tr>
+                            <td>{{ $ticker->id }}</td>
+                            <td>{{ $ticker->content ?? '' }}</td>
+                            <td>{{ $ticker->path ?? 'undefined' }}</td>
+                            <td>{{ $ticker->created_at->format('d-m-Y g:i:s A') }}</td>
                             <td>
-                                <img src="{{ asset('uploads/tenders/'.$tender->path) }}" class="img-thumbnail" width="100px" alt="{{ $tender->title ?? '' }}">
-                            </td>
-                            <td>{{ $tender->type ?? '' }}</td>
-                            <td>{{ $tender->title ?? 'undefined' }}</td>
-                            <td>{{ $tender->created_at->format('d-m-Y g:i:s A') }}</td>
-                            <td>
-                                <a href="{{ route('tenders.edit', $tender->id) }}" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
-                                <a href="{{ route('tenders.destroy', $tender->id) }}" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')"><i class="fas fa-trash"></i></a>
+                                <a href="{{ route('tickers.edit', $ticker->id) }}" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
+                                <a href="{{ route('tickers.destroy', $ticker->id) }}" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')"><i class="fas fa-trash"></i></a>
                             </td>
                         </tr>
                     @endforeach
@@ -114,10 +102,10 @@
 
     </div>
 
-    @if($tenders->total() > 15)
+    @if($tickers->total() > 15)
         <!-- /.card-body -->
         <div class="card-footer clearfix">
-            {{ $tenders->links() }}
+            {{ $tickers->links() }}
         </div>
         <!-- /.card-footer-->
     @endif

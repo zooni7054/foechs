@@ -11,9 +11,10 @@ use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\MemberController;
 use App\Http\Controllers\Admin\TenderController;
+use App\Http\Controllers\Admin\TickerController;
+
+
 use App\Http\Controllers\Admin\SettingController;
-
-
 use App\Http\Controllers\Admin\DocumentController;
 use App\Http\Controllers\Admin\Users\RoleController;
 use App\Http\Controllers\Admin\Users\UserController;
@@ -105,6 +106,16 @@ Route::prefix('admin')->middleware('auth')->group(function () {
         Route::post('/edit/{id}', [TenderController::class, 'update'])->name('tenders.update');
         Route::get('/delete/{id}', [TenderController::class, 'destroy'])->name('tenders.destroy');
         Route::get('/restore/{id}', [TenderController::class, 'restore'])->name('tenders.restore');
+    });
+
+    Route::prefix('tickers')->group(function () {
+        Route::get('/', [TickerController::class, 'index'])->name('tickers.index');
+        Route::get('/create', [TickerController::class, 'create'])->name('tickers.create');
+        Route::post('/create', [TickerController::class, 'store'])->name('tickers.store');
+        Route::get('/edit/{id}', [TickerController::class, 'edit'])->name('tickers.edit');
+        Route::post('/edit/{id}', [TickerController::class, 'update'])->name('tickers.update');
+        Route::get('/delete/{id}', [TickerController::class, 'destroy'])->name('tickers.destroy');
+        Route::get('/restore/{id}', [TickerController::class, 'restore'])->name('tickers.restore');
     });
 
     

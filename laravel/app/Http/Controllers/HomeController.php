@@ -13,6 +13,7 @@ use App\Models\Member;
 use App\Models\Tender;
 
 
+use App\Models\Ticker;
 use App\Models\Document;
 use App\Models\PostImage;
 use App\Models\AlbumImage;
@@ -46,7 +47,8 @@ class HomeController extends Controller
             $members = Member::orderBy('sort', 'ASC')->get();
             $events = Event::orderBy('schedule_date', 'DESC')->limit(3)->get();
             $tenders = Tender::orderBy('created_at', 'DESC')->limit(3)->get();
-            return view($page->view_name)->with(compact('page', 'members', 'events', 'tenders'));
+            $tickers = Ticker::orderBy('order', 'DESC')->limit(10)->get();
+            return view($page->view_name)->with(compact('page', 'members', 'events', 'tenders', 'tickers'));
         }
 
         // management committee

@@ -81,6 +81,16 @@
             </a>
         </li>
 
+        <li class="nav-item">
+            <a href="{{ route('tickers.index') }}"
+                class="nav-link {{ request()->is('admin/tickers', 'admin/tickers/*') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-asterisk"></i>
+                <p>
+                    Tickers
+                </p>
+            </a>
+        </li>
+
 
         <li class="nav-header">SETTINGS</li>
 
