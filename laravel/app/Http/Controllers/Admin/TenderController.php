@@ -163,7 +163,7 @@ class TenderController extends Controller
         $filename = uniqid() . '.' . $image->getClientOriginalExtension();
         $location = $pathtocreate . '/' . $filename;
 
-        Image::make($image)->fit(950, 750, function ($constraint) {
+        Image::make($image)->fit(1050, 1050, function ($constraint) {
             $constraint->upsize();
         })->save($location);
 
