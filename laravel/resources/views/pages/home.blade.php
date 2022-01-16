@@ -271,12 +271,14 @@
                     </div>
                 @endforeach
 
+            @else
+                <h3 class="text-center">No Tenders Found</h3>
+            @endif
+
+            @if(count($tenders) > 3)
                 <div class="text-center">
                     <a href="{{ route('tenders-procurements') }}" class="btn btn-all btn-primary">View All</a>
                 </div>
-
-            @else
-                <h3 class="text-center">No Tenders Found</h3>
             @endif
 
         </div>
