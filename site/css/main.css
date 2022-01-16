@@ -799,3 +799,35 @@ footer .item ul li {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
+
+
+
+/* breaking-news */
+.news-tickers{
+    margin-top: 40px;
+}
+.breaking-news{
+    display: flex !important;
+    align-items: center!important;
+    justify-content: space-between !important;
+    background-color: #dbdbdb !important;
+}
+.breaking-news .news{
+    width: 90px;
+    color: #fff!important;
+    background-color: #006e33 !important;
+    padding-left: 12px;
+}
+.breaking-news .news .align-items-center{
+    align-items: center!important;
+    display: flex !important;
+}
+.breaking-news .news-scroll a {
+    text-decoration: none;
+    font-size: 15px;
+}
+.breaking-news .news-scroll a i{
+    font-size: 10px;
+    margin-right: 5px;
+    margin-left: 30px;
+}

@@ -41,6 +41,33 @@
 
 <div class="clearfix"></div>
 
+@if(count($tickers) > 0)
+
+<div class="news-tickers">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breaking-news">
+                    <div class="news">
+                        <span class="d-flex align-items-center">Recent</span>
+                    </div>
+                    <marquee class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"> 
+                        @foreach ($tickers as $ticker)
+                            <a href="{{ $ticker->path }}" target="_blank">
+                                <i class="fa fa-circle"></i> {{ $ticker->content }}
+                            </a>
+                        @endforeach
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+
+@endif
+
 <div class="section home-welcome">
     <div class="container">
         <div class="row">
