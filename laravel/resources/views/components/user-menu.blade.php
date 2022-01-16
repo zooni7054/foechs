@@ -52,6 +52,16 @@
         </li>
 
         <li class="nav-item">
+            <a href="{{ route('tenders.index') }}"
+                class="nav-link {{ request()->is('admin/tenders-procurements', 'admin/tenders-procurements/*') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-archway"></i>
+                <p>
+                    Tenders & Procurements
+                </p>
+            </a>
+        </li>
+
+        <li class="nav-item">
             <a href="{{ route('documents.index') }}"
                 class="nav-link {{ request()->is('admin/forms-documents', 'admin/forms-documents/*') ? 'active' : '' }}">
                 <i class="nav-icon fas fa-clone"></i>

@@ -224,6 +224,40 @@
 
 <div class="clearfix"></div>
 
+<div class="section home-tenders">
+    <div class="container">
+        <h2 class="text-center">Tenders & Procurements</h2>
+        <p class="text-center">Browse through the tenders & procurements published in the newspapers for the development.</p>
+
+        <div class="row">
+
+            @if (count($tenders))
+                @foreach ($tenders as $tender)
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <a href="{{ asset('uploads/tenders/'.$tender->path) }}" class="with-caption image-link">
+                            <div class="item">
+                                <img src="{{ asset('uploads/tenders/'.$tender->path) }}" class="img-responsive" alt="{{ $tender->title }}">
+                                <p><i class="fa fa-calendar"></i> {{ $tender->created_at->format('d-m-Y') }}</p>
+                                <h3>{{ $tender->title }}</h3>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
+
+                <div class="text-center">
+                    <a href="{{ route('tenders-procurements') }}" class="btn btn-all btn-primary">View All</a>
+                </div>
+
+            @else
+                <h3 class="text-center">No Tenders Found</h3>
+            @endif
+
+        </div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+
 <div class="section home-contact">
     <div class="container">
         <iframe

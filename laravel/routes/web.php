@@ -10,10 +10,11 @@ use App\Http\Controllers\Admin\AlbumController;
 use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\MemberController;
+use App\Http\Controllers\Admin\TenderController;
 use App\Http\Controllers\Admin\SettingController;
+
+
 use App\Http\Controllers\Admin\DocumentController;
-
-
 use App\Http\Controllers\Admin\Users\RoleController;
 use App\Http\Controllers\Admin\Users\UserController;
 /*
@@ -94,6 +95,16 @@ Route::prefix('admin')->middleware('auth')->group(function () {
         Route::post('/edit/{id}', [MemberController::class, 'update'])->name('members.update');
         Route::get('/delete/{id}', [MemberController::class, 'destroy'])->name('members.destroy');
         Route::get('/restore/{id}', [MemberController::class, 'restore'])->name('members.restore');
+    });
+
+    Route::prefix('tenders-procurements')->group(function () {
+        Route::get('/', [TenderController::class, 'index'])->name('tenders.index');
+        Route::get('/create', [TenderController::class, 'create'])->name('tenders.create');
+        Route::post('/create', [TenderController::class, 'store'])->name('tenders.store');
+        Route::get('/edit/{id}', [TenderController::class, 'edit'])->name('tenders.edit');
+        Route::post('/edit/{id}', [TenderController::class, 'update'])->name('tenders.update');
+        Route::get('/delete/{id}', [TenderController::class, 'destroy'])->name('tenders.destroy');
+        Route::get('/restore/{id}', [TenderController::class, 'restore'])->name('tenders.restore');
     });
 
     

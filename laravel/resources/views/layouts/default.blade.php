@@ -154,6 +154,7 @@
                     <li><a href="{{ route('transfer-process') }}">Transfer Process</a></li>
                     <li><a href="{{ route('possession-process') }}">Possession Process</a></li>
                     <li><a href="{{ route('construction-house') }}">Construction of House</a></li>
+                    <li><a href="{{ route('tenders-procurements') }}">Tenders & Procurements</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>

@@ -10,9 +10,10 @@ use App\Models\Album;
 use App\Models\Event;
 
 use App\Models\Member;
+use App\Models\Tender;
+
+
 use App\Models\Document;
-
-
 use App\Models\PostImage;
 use App\Models\AlbumImage;
 use Spatie\Sitemap\Sitemap;
@@ -44,7 +45,8 @@ class HomeController extends Controller
         if($page->slug == '/'){
             $members = Member::orderBy('sort', 'ASC')->get();
             $events = Event::orderBy('schedule_date', 'DESC')->limit(3)->get();
-            return view($page->view_name)->with(compact('page', 'members', 'events'));
+            $tenders = Tender::orderBy('created_at', 'DESC')->limit(3)->get();
+            return view($page->view_name)->with(compact('page', 'members', 'events', 'tenders'));
         }
 
         // management committee
@@ -76,6 +78,12 @@ class HomeController extends Controller
         if($page->slug == 'updates'){
             $posts = Post::orderBy('created_at', 'DESC')->paginate(15);
             return view($page->view_name)->with(compact('page', 'posts'));
+        }
+
+        // tenders-procurements
+        if($page->slug == 'tenders-procurements'){
+            $tenders = Tender::orderBy('created_at', 'DESC')->paginate(15);
+            return view($page->view_name)->with(compact('page', 'tenders'));
         }
 
         // events
