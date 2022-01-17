@@ -57,6 +57,22 @@
             @enderror
 
             <div class="form-group">
+                <label for="exampleInputEmail1">Opening Date <span>*</span></label>
+                <input type="text" class="form-control datetimepicker-input datepicker" name="opening_date" data-toggle="datetimepicker" data-target=".datepicker"/>
+            </div>
+            @error('opening_date')
+                <div class="validate-error">{{ $message }}</div>
+            @enderror
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Closing Date <span>*</span></label>
+                <input type="text" class="form-control datetimepicker-input datepicker2" name="closing_date" data-toggle="datetimepicker2" data-target=".datepicker2"/>
+            </div>
+            @error('closing_date')
+                <div class="validate-error">{{ $message }}</div>
+            @enderror
+
+            <div class="form-group">
                 <label for="exampleInputEmail1">Meta Title</label>
                 <input type="text" class="form-control" name="meta_title" placeholder="Enter Meta Title">
             </div>
@@ -82,5 +98,31 @@
     </form>
 </div>
 <!-- /.card -->
+
+@endsection
+
+@section('scripts')
+
+<script>
+
+    $(function () {
+        $('.datepicker').datetimepicker({
+            format: 'L',
+            format: 'DD-MM-YYYY',
+            keepInvalid: false
+        });
+
+    });
+
+    $(function () {
+        $('.datepicker2').datetimepicker({
+            format: 'L',
+            format: 'DD-MM-YYYY',
+            keepInvalid: false
+        });
+
+    });
+
+</script>
 
 @endsection

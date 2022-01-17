@@ -18,4 +18,9 @@ class Tender extends Model
         'meta_title',
         'meta_description',
     ];
+
+    protected $dates = [
+        'opening_date',
+        'closing_date',
+    ];
 }

@@ -83,6 +83,7 @@
                 <th>Image</th>
                 <th>Type</th>
                 <th>Title</th>
+                <th>Tender Date</th>
                 <th>Created At</th>
                 <th class="action">Action</th>
               </tr>
@@ -98,6 +99,7 @@
                             </td>
                             <td>{{ $tender->type ?? '' }}</td>
                             <td>{{ $tender->title ?? 'undefined' }}</td>
+                            <td>{{ $tender->opening_date->format('d-m-Y') }} - {{ $tender->closing_date->format('d-m-Y') }}</td>
                             <td>{{ $tender->created_at->format('d-m-Y g:i:s A') }}</td>
                             <td>
                                 <a href="{{ route('tenders.edit', $tender->id) }}" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>

@@ -19,6 +19,8 @@ class CreateTendersTable extends Migration
             $table->string('title');
             $table->longText('description')->nullable();
             $table->string('path');
+            $table->date('opening_date')->nullable();
+            $table->date('closing_date')->nullable();
             $table->string('meta_title')->nullable();
             $table->longText('meta_description')->nullable();
             $table->softDeletes();

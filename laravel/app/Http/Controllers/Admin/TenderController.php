@@ -66,6 +66,8 @@ class TenderController extends Controller
             'type' => 'required',
             'title' => 'required',
             'description' => 'required',
+            'opening_date' => 'required',
+            'closing_date' => 'required',
         ];
 
         if ($request->has('file')) {
@@ -79,6 +81,12 @@ class TenderController extends Controller
             // update request
             $request->request->add(['path' => $filename]);
         }
+
+        // set data
+        $opening_date = Carbon::createFromFormat('d-m-Y', $request->opening_date);
+        $closing_date = Carbon::createFromFormat('d-m-Y', $request->closing_date);
+        // update request
+        $request->request->add(['opening_date' => $opening_date, 'closing_date' => $closing_date]);
 
         $tender = Tender::create($request->except('file'));
 
@@ -129,7 +137,9 @@ class TenderController extends Controller
         $rules = [
             'type' => 'required',
             'title' => 'required',
-            'description' => 'required'
+            'description' => 'required',
+            'opening_date' => 'required',
+            'closing_date' => 'required',
         ];
 
         if ($request->has('file')) {
@@ -145,6 +155,12 @@ class TenderController extends Controller
         }
 
         Setting::where('key', 'updated')->update(['value' => Carbon::now()->format('M, d Y')]);
+
+        // set data
+        $opening_date = Carbon::createFromFormat('d-m-Y', $request->opening_date);
+        $closing_date = Carbon::createFromFormat('d-m-Y', $request->closing_date);
+        // update request
+        $request->request->add(['opening_date' => $opening_date, 'closing_date' => $closing_date]);
 
         if ($tender->update($request->except('file'))) {
             Session::flash('success', 'Tender Update updated successfully!');
