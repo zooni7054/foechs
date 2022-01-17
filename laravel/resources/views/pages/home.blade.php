@@ -264,7 +264,7 @@
                         <a href="{{ asset('uploads/tenders/'.$tender->path) }}" class="with-caption image-link">
                             <div class="item">
                                 <img src="{{ asset('uploads/tenders/'.$tender->path) }}" class="img-responsive" alt="{{ $tender->title }}">
-                                <p><i class="fa fa-calendar"></i> {{ $tender->created_at->format('d-m-Y') }}</p>
+                                <p><i class="fa fa-calendar"></i> {{ $tender->opening_date->format('d-m-Y') }} - <span style="color: #f00;">{{ $tender->closing_date->format('d-m-Y') }}</span></p>
                                 <h3>{{ $tender->title }}</h3>
                             </div>
                         </a>
