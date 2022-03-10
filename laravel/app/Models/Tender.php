@@ -17,6 +17,9 @@ class Tender extends Model
         'path',
         'meta_title',
         'meta_description',
+        'opening_date',
+        'closing_date',
+        'download_link'
     ];
 
     protected $dates = [

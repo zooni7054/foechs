@@ -116,6 +116,13 @@ class HomeController extends Controller
         return view('pages.single-post')->with(compact('post', 'images'));
     }
 
+    public function singleTender($id){
+        $tender = Tender::findOrFail($id);
+        return view('pages.single-tender')->with(compact('tender'));
+    }
+
+    
+
     public function contactUs(Request $request){
         $rules = [
             'name' => 'required',

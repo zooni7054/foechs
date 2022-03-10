@@ -94,7 +94,7 @@ class TenderController extends Controller
 
         if ($tender) {
             Session::flash('success', 'Tender created successfully!');
-            return redirect()->route('tenders.edit', $tender->id);
+            return redirect()->route('tenders.index');
         } else {
             Session::flash('error', 'Some error occured. Please try again!');
             return redirect()->back();

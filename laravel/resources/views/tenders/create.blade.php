@@ -73,6 +73,14 @@
             @enderror
 
             <div class="form-group">
+                <label for="exampleInputEmail1">Download Link</label>
+                <input type="text" class="form-control" name="download_link" placeholder="Download Link">
+            </div>
+            @error('meta_title')
+                <div class="validate-error">{{ $message }}</div>
+            @enderror
+
+            <div class="form-group">
                 <label for="exampleInputEmail1">Meta Title</label>
                 <input type="text" class="form-control" name="meta_title" placeholder="Enter Meta Title">
             </div>

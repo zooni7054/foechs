@@ -23,6 +23,7 @@ class CreateTendersTable extends Migration
             $table->date('closing_date')->nullable();
             $table->string('meta_title')->nullable();
             $table->longText('meta_description')->nullable();
+            $table->longText('download_link')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

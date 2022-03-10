@@ -26,7 +26,7 @@
 
                     @foreach ($tenders as $tender)
                         <div class="col-xs-12 col-sm-6 col-md-4">
-                            <a href="{{ asset('uploads/tenders/'.$tender->path) }}" class="with-caption image-link">
+                            <a href="{{ route('single-tender', $tender->id) }}">
                                 <div class="item">
                                     <img src="{{ asset('uploads/tenders/'.$tender->path) }}" class="img-responsive" alt="{{ $tender->title }}">
                                     <p><i class="fa fa-calendar"></i> {{ $tender->opening_date->format('d-m-Y') }} - <span style="color: #f00;">{{ $tender->closing_date->format('d-m-Y') }}</span></p>
