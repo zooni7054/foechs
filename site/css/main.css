@@ -255,7 +255,7 @@ a:focus {
 
 /* news-ticker */
 .news-tickers {
-    margin-top: 30px;
+    margin-top: 0px;
 }
 .news-tickers h3 {
     font-size: 22px;
@@ -805,18 +805,18 @@ footer .item ul li {
 
 /* breaking-news */
 .news-tickers{
-    margin-top: 40px;
+    margin-top: 0px;
 }
 .breaking-news{
     display: flex !important;
     align-items: center!important;
     justify-content: space-between !important;
-    background-color: #dbdbdb !important;
+    background-color: #fff !important;
 }
 .breaking-news .news{
     width: 90px;
     color: #fff!important;
-    background-color: #006e33 !important;
+    background-color: #1778dd !important;
     padding-left: 12px;
 }
 .breaking-news .news .align-items-center{
