@@ -214,20 +214,6 @@
         </div>
     </footer>
 
-    <div class="modal fade" id="circular">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Circular for Possession</h4>
-                </div>
-                <div class="modal-body">
-                    <img src="{{ asset('assets/img/circular-2022.jpeg') }}" class="img-responsive" alt="circular">
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     <script src="{{ asset('site/js/vendor/jquery-1.11.2.min.js') }}"></script>
     <script src="{{ asset('site/js/vendor/bootstrap.min.js') }}"></script>
@@ -243,20 +229,6 @@
 
     @yield('customjs')
 
-    <script>
-
-        var newsletter = localStorage.getItem("newsletter");
-
-        if(newsletter == null){
-            $('#circular').modal('show');
-        }
-        
-        $("#circular").on("hidden.bs.modal", function () {
-            // put your default event here
-            localStorage.setItem("newsletter", "hide");
-        });
-
-    </script>
 </body>
 
 </html>

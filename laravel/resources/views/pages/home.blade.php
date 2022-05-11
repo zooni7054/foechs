@@ -300,5 +300,39 @@
 
 
 
+<div class="modal fade" id="circular">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Circular for Possession</h4>
+            </div>
+            <div class="modal-body">
+                <img src="{{ asset('assets/img/circular-2022.jpeg') }}" class="img-responsive" alt="circular">
+            </div>
+        </div>
+    </div>
+</div>
 
+
+@endsection
+
+
+@section('çustomjs')
+    <script>
+
+        $('#circular').modal('show');
+
+        // var newsletter = localStorage.getItem("newsletter");
+
+        // if(newsletter == null){
+        //     $('#circular').modal('show');
+        // }
+        
+        // $("#circular").on("hidden.bs.modal", function () {
+        //     // put your default event here
+        //     localStorage.setItem("newsletter", "hide");
+        // });
+
+    </script>
 @endsection

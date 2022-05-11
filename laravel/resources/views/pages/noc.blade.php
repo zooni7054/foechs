@@ -71,6 +71,16 @@
                     </a>
                 </div>
 
+                <div class="col-sm-6 col-md-4">
+                    <a href="{{ asset('uploads/documents/627b997a01d3c.pdf') }}" target="_blank">
+                        <div class="item" style="background-image: url({{ asset('site/img/noc/commercial-rda.png') }});">
+                            <div class="content-area">
+                                <h4>Commercial NOC from RDA</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
             </div>
 
         </div>
