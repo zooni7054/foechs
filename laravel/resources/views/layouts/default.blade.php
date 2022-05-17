@@ -227,7 +227,8 @@
 
     <script src="{{ asset('site/js/main.js') }}"></script>
 
-    @yield('customjs')
+
+    @yield('çustomjs')
 
 </body>
 
