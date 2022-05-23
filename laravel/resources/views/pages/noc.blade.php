@@ -81,6 +81,16 @@
                     </a>
                 </div>
 
+                <div class="col-sm-6 col-md-4">
+                    <a href="{{ asset('uploads/documents/628b22fb4d84b.pdf') }}" target="_blank">
+                        <div class="item" style="background-image: url({{ asset('site/img/noc/masjid-noc.png') }});">
+                            <div class="content-area">
+                                <h4>NOC for Masjid</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
             </div>
 
         </div>
