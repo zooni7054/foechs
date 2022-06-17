@@ -41,7 +41,7 @@
     
                 <div class="form-group">
                     <label for="exampleInputEmail1">Enter Description <span>*</span></label>
-                    <textarea name="description" class="form-control" rows="4" placeholder="Enter Description">{{ $tender->type }}</textarea>
+                    <textarea name="description" class="form-control" rows="4" placeholder="Enter Description">{{ $tender->description }}</textarea>
                 </div>
                 @error('description')
                     <div class="validate-error">{{ $message }}</div>
