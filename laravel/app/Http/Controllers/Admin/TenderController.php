@@ -76,11 +76,11 @@ class TenderController extends Controller
 
         $request->validate($rules);
 
-        // if ($request->has('file')) {
-        //     $filename = $this->uploadImage($request);
-        //     // update request
-        //     $request->request->add(['path' => $filename]);
-        // }
+        if ($request->has('file')) {
+            $filename = $this->uploadImage($request);
+            // update request
+            $request->request->add(['path' => $filename]);
+        }
 
         // set data
         $opening_date = Carbon::createFromFormat('d-m-Y', $request->opening_date);
