@@ -155,6 +155,7 @@
                     <li><a href="{{ route('possession-process') }}">Possession Process</a></li>
                     <li><a href="{{ route('construction-house') }}">Construction of House</a></li>
                     <li><a href="{{ route('tenders-procurements') }}">Tenders & Procurements</a></li>
+                    <li><a href="{{ route('allotment-plot-foechs-extension') }}">FOECHS Extension</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>
