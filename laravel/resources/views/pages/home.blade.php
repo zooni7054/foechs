@@ -326,7 +326,9 @@
                     <h4 class="modal-title">Circular for Possession</h4>
                 </div>
                 <div class="modal-body">
-                    <img src="{{ asset('assets/img/circular-2022.jpeg') }}" class="img-responsive" alt="circular">
+                    <a href="https://www.foechs.com/allotment-plot-foechs-extension">
+                        <img src="{{ asset('assets/img/circular-2022.jpeg') }}" class="img-responsive" alt="circular">
+                    </a>
                 </div>
             </div>
         </div>
