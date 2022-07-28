@@ -323,7 +323,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Circular for Possession</h4>
+                    <h4 class="modal-title">Circular for Allotment of plots in FOECHS extension</h4>
                 </div>
                 <div class="modal-body">
                     <a href="https://www.foechs.com/allotment-plot-foechs-extension">

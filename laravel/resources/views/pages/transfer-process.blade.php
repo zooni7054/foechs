@@ -25,7 +25,7 @@
             <p>The following actions are required:</p>
 
             <ol>
-                <li>NDC (No Dues Certificate) Charges for NDC Rs. 5,000</li>
+                <li>NDC (No Dues Certificate)</li>
                 <li>Application for transfer of plot from transferor</li>
                 <li>Submission of transfer form (available in FOECHS office) duly signed with thumb impressions by transferor & transferee</li>
                 <li>Affidavit (value 100) on stamp paper as per specimen from transferor & transferee attested by Notary Public</li>
